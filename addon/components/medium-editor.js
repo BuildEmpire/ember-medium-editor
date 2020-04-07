@@ -98,6 +98,7 @@ const MediumEditorComponent = Component.extend({
     this._super(...arguments);
     this.set('_skipNextOnChangeTrigger', true);
     this._setContent(get(this, '_editor'));
+    this.set('_skipNextOnChangeTrigger', false);
   },
 
   /**
